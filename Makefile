@@ -3,7 +3,7 @@ V=20220927
 PREFIX=/usr/local
 
 install:
-	install -dm755 ${DESTDIR)$(PREFIX)/share/pacman/keyrings/
+	install -dm755 $(DESTDIR)$(PREFIX)/share/pacman/keyrings/
 	install -m0644 ardentlinux{.gpg,-trusted,-revoked} $(DESTDIR)$(PREFIX)/share/pacman/keyrings/
 
 uninstall:
